@@ -1,0 +1,40 @@
+  CREATE TABLE churn 
+  (Customer_ID text ,
+  Gender text,
+  Age int,
+  Married text,
+  State text,
+  Number_of_Referrals int,
+  Tenure_in_Months int,
+  Value_Deal text,
+  Phone_Service text,
+  Multiple_Lines text,
+  Internet_Service text,
+  Internet_Type text,
+  Online_Security text,
+  Online_Backup text,
+  Device_Protection_Plan text,
+  Premium_Support text,
+  Streaming_TV text,
+  Streaming_Movies text,
+  Streaming_Music text,
+  Unlimited_Data text,
+  Contract text,
+  Paperless_Billing text,
+  Payment_Method text,
+  Monthly_Charge double,
+  Total_Charges double,
+  Total_Refunds double,
+  Total_Extra_Data_Charges int,
+  Total_Long_Distance_Charges double,
+  Total_Revenue double,
+  Customer_Status text,
+  Churn_Category text,
+  Churn_Reason text
+    );
+
+    LOAD DATA LOCAL INFILE 'C:/Users/Customer_Data.csv' INTO TABLE churn 
+FIELDS TERMINATED BY ','
+
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES;
